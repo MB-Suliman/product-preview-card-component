@@ -57,12 +57,13 @@ body {
 /* End Media Screen */
 /* Start Parent*/
 .parent {
-    width: 625px;
+    width: 620px;
     display: grid;
     grid-template-columns: repeat(2, minmax(175px, 1fr));
     margin: auto;
-    padding: calc(50vh - 182px) 10px calc(50vh - 195px);
+    padding: calc(50vh - 225px) 10px calc(50vh - 238px);
     align-items: center;
+    grid-template-rows: 450px;
 }
 @media (max-width: 767px) {
     .parent {
@@ -102,7 +103,7 @@ body {
 .col-2s {
     height: 100%;
     background-color: var(--fifth-color);
-    padding: 15px 25px;
+    padding: 20px 25px;
     text-transform: capitalize;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -125,8 +126,8 @@ body {
 }
 .col-2s h1{
     margin: 0px;
-    padding: 10px 35px 10px 0px;
-    font-size: 29px;
+    padding: 15px 35px 5px 0px;
+    font-size: 30px;
 }
 @media (max-width: 767px) {
     .col-2s h1{
@@ -139,16 +140,17 @@ body {
     color: var(--forth-color);
     text-transform: initial;
     font-family: 'Montserrat', sans-serif;
-    line-height: 24px;
-    padding-right: 10px;
+    line-height: 30px;
+    padding: 15px 10px;
+    padding-left: 0px;
 }
 @media (max-width: 767px) {
     .col-2s p{
-        padding-right: 0px;
+        padding: 0px;
     }
 }
 .col-2s div{
-    padding: 10px 0px;
+    padding: 15px 0px;
     position: relative;
 }
 .col-2s span:first-of-type{
