@@ -1,0 +1,188 @@
+/* Start Font Family */
+/* End Font Family */
+/* Start Variables */
+:root {
+    --mainPadding: 20px;
+    --main-color: hsl(158, 36%, 37%);
+    --secondary-color: hsl(30, 38%, 92%);
+    --third-color: hsl(212, 21%, 14%);
+    --forth-color: hsl(228, 12%, 48%);
+    --fifth-color: hsl(0, 0%, 100%);
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Fraunces', serif;
+    background-color: var(--secondary-color);
+    height: 100vh;
+}
+/* End Global Rules */
+/* Start Media Screen */
+.container {
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ /* Small */
+@media (max-width: 767px) {
+    .container {
+        max-width: 400px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Media Screen */
+/* Start Parent*/
+.parent {
+    width: 550px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(175px, 1fr));
+    margin: auto;
+    padding: 135px 10px;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr;
+        margin: auto;
+        padding: 15px 0px;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.col-1s {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: hidden;
+    background-color: transparent;
+    background-image: url(../imgs/image-product-desktop.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 767px) {
+    .col-1s {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        overflow: hidden;
+        border-bottom-left-radius: 0px;
+        background-color: transparent;
+        background-size: cover;
+        background-image: url(../imgs/image-product-mobile.jpg);
+    }
+}
+.col-1s img {
+    max-width: 100%;
+}
+.col-2s {
+    height: 100%;
+    background-color: var(--fifth-color);
+    padding: 15px 25px;
+    text-transform: capitalize;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+@media (max-width: 767px) {
+    .col-2s {
+        background-color: var(--fifth-color);
+        padding: 20px 30px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
+.col-2s::before {
+    content: "perfum";
+    font-size: 15px;
+    letter-spacing: 10px;
+    color: var(--forth-color);
+    text-transform: uppercase;
+}
+.col-2s h1{
+    margin: 0px;
+    padding: 10px 0px;
+}
+@media (max-width: 767px) {
+    .col-2s h1{
+        padding-right: 10px;
+    }
+}
+.col-2s p{
+    margin: 0px;
+    font-size: 13px;
+    color: var(--forth-color);
+    text-transform: initial;
+    font-family: 'Montserrat', sans-serif;
+}
+.col-2s div{
+    padding: 20px 0px;
+    position: relative;
+}
+.col-2s span:first-of-type{
+    font-size: 35px;
+    color: var(--main-color);
+}
+.col-2s span:last-of-type{
+    text-decoration: line-through;
+    padding-left: 20px;
+    position: absolute;
+    color: var(--forth-color);
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media (max-width: 767px) {
+    .col-2s span:last-of-type{
+        /* position: initial; */
+    }
+}
+.col-2s .button{
+    padding: 12px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--fifth-color);
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.col-2s .button:hover {
+    background-color: hsl(156, 42%, 18%);
+}
+.col-2s .button::before{
+    content: url(../imgs/icon-cart.svg);
+    padding: 0px 5px;
+}
+/* End Parent*/
+/* Start Footer*/
+
+/* End Footer*/
