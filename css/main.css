@@ -158,7 +158,6 @@ body {
 }
 @media (max-width: 767px) {
     .col-2s span:last-of-type{
-        /* position: initial; */
     }
 }
 .col-2s .button{
